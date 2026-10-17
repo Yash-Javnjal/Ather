@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AETHER | Register</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="auth-body">
+    <nav class="auth-nav">
+        <a class="logo" href="index.html">AETHER</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#destinations">Journal</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <main class="auth-page">
+        <section class="auth-shell">
+            <div class="auth-visual register-visual">
+                <div class="auth-visual-copy">
+                    <span class="label">Start Your Journey</span>
+                    <h1>The world awaits your next route.</h1>
+                    <p>Create a simple travel account for saved trip interests and faster booking messages.</p>
+                </div>
+            </div>
+
+            <div class="auth-card">
+                <span class="label">Free Account</span>
+                <h2>Create your Aether account.</h2>
+
+                <form class="auth-form" id="registerForm">
+                    <div class="auth-field">
+                        <label for="registerName">Name</label>
+                        <input type="text" id="registerName" placeholder="Full name" required>
+                    </div>
+
+                    <div class="auth-field">
+                        <label for="registerEmail">Email</label>
+                        <input type="email" id="registerEmail" placeholder="Email address" required>
+                    </div>
+
+                    <div class="auth-field">
+                        <label for="registerPassword">Password</label>
+                        <input type="password" id="registerPassword" placeholder="Minimum 6 characters" minlength="6"
+                            required>
+                    </div>
+
+                    <div class="auth-field">
+                        <label for="travelStyle">Travel Style</label>
+                        <select id="travelStyle" required>
+                            <option value="">Choose your style</option>
+                            <option value="culture">Culture</option>
+                            <option value="nature">Nature</option>
+                            <option value="coast">Coast</option>
+                            <option value="city">City</option>
+                        </select>
+                    </div>
+
+                    <label class="terms-row">
+                        <input type="checkbox" id="termsCheck" required>
+                        <span>I agree to receive trip updates from Aether.</span>
+                    </label>
+
+                    <button type="submit" class="auth-submit">Create Account</button>
+                </form>
+
+                <p class="auth-switch">Already have an account? <a href="login.html">Sign in</a></p>
+            </div>
+        </section>
+    </main>
+
+    <div id="msg"></div>
+    <script src="auth.js"></script>
+</body>
+
+</html>

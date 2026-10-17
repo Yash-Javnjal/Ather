@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AETHER | Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="auth-body">
+    <nav class="auth-nav">
+        <a class="logo" href="index.html">AETHER</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#destinations">Journal</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul>
+    </nav>
+
+    <main class="auth-page">
+        <section class="auth-shell">
+            <div class="auth-visual login-visual">
+                <div class="auth-visual-copy">
+                    <span class="label">Aether Club</span>
+                    <h1>Welcome back, adventurer.</h1>
+                    <p>Continue planning transparent trips with saved destination preferences.</p>
+                </div>
+            </div>
+
+            <div class="auth-card">
+                <span class="label">Member Login</span>
+                <h2>Sign in to your travel desk.</h2>
+
+                <form class="auth-form" id="loginForm">
+                    <div class="auth-field">
+                        <label for="loginEmail">Email</label>
+                        <input type="email" id="loginEmail" placeholder="Email address" required>
+                    </div>
+
+                    <div class="auth-field">
+                        <label for="loginPassword">Password</label>
+                        <input type="password" id="loginPassword" placeholder="Password" required>
+                    </div>
+
+                    <button type="submit" class="auth-submit">Login</button>
+                </form>
+
+                <p class="auth-switch">New to Aether? <a href="register.html">Create an account</a></p>
+            </div>
+        </section>
+    </main>
+
+    <div id="msg"></div>
+    <script src="auth.js"></script>
+</body>
+
+</html>
